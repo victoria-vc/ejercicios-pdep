@@ -1,3 +1,3 @@
-# Changelog for proyecto-test
+# Changelog for ejercicios-pdep
 
 ## Unreleased changes
