@@ -1,4 +1,4 @@
-module Library where
+module Basicos where
 import PdePreludat
 
 doble :: Number -> Number

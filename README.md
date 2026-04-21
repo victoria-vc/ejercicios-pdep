@@ -110,3 +110,6 @@ Definir la función `esPesoUtil`, que indique si un peso es útil.
 Definir la función `sirvePino`, que:
 - recibe la altura de un pino
 - indica si sirve para la fábrica
+
+## Ejercicio "League of Haskell": 
+[Enunciado:] (Ejercicio-LeagueOfHashell.pdf)

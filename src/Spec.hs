@@ -1,6 +1,7 @@
 module Spec where
 import PdePreludat
-import Library
+import Basicos
+import EjercicioLOH
 import Test.Hspec
 
 correrTests :: IO ()
