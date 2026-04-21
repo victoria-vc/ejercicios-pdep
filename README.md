@@ -112,4 +112,4 @@ Definir la función `sirvePino`, que:
 - indica si sirve para la fábrica
 
 ## Ejercicio "League of Haskell": 
-[Enunciado] (Ejercicio-LeagueOfHashell.pdf)
+[Enunciado:](Ejercicio-LeagueOfHashell.pdf)
