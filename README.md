@@ -119,6 +119,6 @@ Definir la función `sirvePino`, que:
 ---
 
 ## Parcial Funcional "Tierra de Barbaros": 
-[Enunciado](./Parcial-Funcional-Tierra-De-Barbaros.pdf)
+[Enunciado](./Parcial-Funcional-Tierra-de-Barbaros.pdf)
 
 ---
