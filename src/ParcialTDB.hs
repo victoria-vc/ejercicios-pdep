@@ -17,7 +17,7 @@ data Barbaro = UnBarbaro
   , fuerza      :: Fuerza
   , habilidades :: [Habilidad]
   , objetos :: [Objeto]
-  } deriving (Show, Eq)
+  } deriving (Show)
 
 
 sumarFuerza :: Fuerza -> Barbaro -> Barbaro

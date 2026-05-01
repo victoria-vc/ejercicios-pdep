@@ -6,11 +6,11 @@ import ParcialTDB
 import Test.Hspec
 
 
- correrTests :: IO ()
+{- correrTests :: IO ()
 correrTests = hspec $ do
   describe "Test de ejemplo" $ do
     it "El pdepreludat se instaló correctamente" $ do
-      doble 1 `shouldBe` 2 
+      doble 1 `shouldBe` 2  -}
 
 -------------------------------- Ejercicio League of Haskell --------------------------------
 
@@ -38,11 +38,11 @@ correrTests = hspec $ do
 
 ---------------------------- Parcial Funcional Tierra de Barbaros ---------------------------
 
-{- correrTests :: IO ()
+correrTests :: IO ()
 correrTests = hspec $ do
   describe "Barbaro" $ do
     describe "ardilla" $ do
       it "cuando recibe un barbaro me devuelve el mismo barbaro" $ do
-        (nombre (ardilla dave)) `shouldBe` (nombre dave) -}
+        (nombre (ardilla dave)) `shouldBe` (nombre dave) 
 
 ---------------------------- Parcial Funcional Tierra de Barbaros ---------------------------
