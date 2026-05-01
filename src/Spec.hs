@@ -2,16 +2,19 @@ module Spec where
 import PdePreludat
 import Basicos
 import EjercicioLOH
+import ParcialTDB
 import Test.Hspec
 
 
-{- correrTests :: IO ()
+ correrTests :: IO ()
 correrTests = hspec $ do
   describe "Test de ejemplo" $ do
     it "El pdepreludat se instaló correctamente" $ do
-      doble 1 `shouldBe` 2 -}
+      doble 1 `shouldBe` 2 
 
-campeonNuevo :: Campeon
+-------------------------------- Ejercicio League of Haskell --------------------------------
+
+{- campeonNuevo :: Campeon
 campeonNuevo = UnCampeon 0 8 TOP ["Ruptura", "Grito salvaje", "Clavos vorpalinos", "Festín"]
 
 correrTests :: IO ()
@@ -28,4 +31,18 @@ correrTests = hspec $ do
   describe "Equipo" $ do
     describe "puedeGanar" $ do
       it "cuando recibe un equipo con un TOP devuelve True" $ do
-        puedeGanar [chogat] `shouldBe` True
+        puedeGanar [chogat] `shouldBe` True -}
+
+-------------------------------- Ejercicio League of Haskell --------------------------------
+
+
+---------------------------- Parcial Funcional Tierra de Barbaros ---------------------------
+
+{- correrTests :: IO ()
+correrTests = hspec $ do
+  describe "Barbaro" $ do
+    describe "ardilla" $ do
+      it "cuando recibe un barbaro me devuelve el mismo barbaro" $ do
+        (nombre (ardilla dave)) `shouldBe` (nombre dave) -}
+
+---------------------------- Parcial Funcional Tierra de Barbaros ---------------------------

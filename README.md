@@ -113,12 +113,12 @@ Definir la función `sirvePino`, que:
 
 ---
 
-## Ejercicio "League of Haskell": 
+## Ejercicio "League of Haskell"
 [Enunciado](./Ejercicio-LeagueOfHaskell.pdf)
 
 ---
 
-## Parcial Funcional "Tierra de Barbaros": 
+## Parcial Funcional "Tierra de Barbaros
 [Enunciado](./Parcial-Funcional-Tierra-de-Barbaros.pdf)
 
 ---
