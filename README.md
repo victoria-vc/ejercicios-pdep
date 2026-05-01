@@ -111,7 +111,14 @@ Definir la función `sirvePino`, que:
 - recibe la altura de un pino
 - indica si sirve para la fábrica
 
+---
+
 ## Ejercicio "League of Haskell": 
 [Enunciado](./Ejercicio-LeagueOfHaskell.pdf)
+
+---
+
+## Parcial Funcional "Tierra de Barbaros": 
+[Enunciado](./Parcial-Funcional-Tierra-De-Barbaros.pdf)
 
 ---
