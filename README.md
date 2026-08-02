@@ -125,6 +125,6 @@ Definir la función `sirvePino`, que:
 
 
 ## Parcial Funcional (tomado 01/06/26) "Héroes de Leyenda"
-[Enunciado](./1p-2026.pdf)
+[Enunciado](./Parcial-Funcional-Héroes-de-Leyenda.pdf)
 
 ---
