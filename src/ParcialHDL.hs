@@ -1,4 +1,4 @@
-module Library where
+module ParcialHDL where
 import PdePreludat
 
 -- 1) Modelado del héroe
