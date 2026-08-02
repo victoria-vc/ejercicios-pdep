@@ -1,6 +1,7 @@
 module Library where
 import PdePreludat
 
+-- 1) Modelado del héroe
 data Heroe = Heroe {
   epiteto :: Epiteto,
   reconocimiento :: Reconocimiento,
@@ -18,6 +19,7 @@ data Artefacto = Artefacto {
 
 type Tarea = Heroe -> Heroe
 
+-- 2) Un héroe pasa a la historia
 paseALaHistoria :: Heroe -> Heroe
 paseALaHistoria heroe
   | reconocimientoMayorA 1000 heroe = cambiarEpiteto "El Mitico" heroe
@@ -40,7 +42,7 @@ lanzaDelOlimpo = Artefacto "Lanza del Olimpo" 100
 xiphos :: Artefacto
 xiphos = Artefacto "Xiphos" 50
 
----------
+-- 3) Tareas que realizan los héroes
 
 encontrarUnArtefacto :: Artefacto -> Tarea
 encontrarUnArtefacto artefacto = agregarArtefacto artefacto . aumentarReconocimiento (rareza artefacto)
@@ -91,6 +93,7 @@ huye = cambiarEpiteto "El Cobarde" . perderPrimerArtefacto
 perderPrimerArtefacto :: Heroe -> Heroe
 perderPrimerArtefacto heroe = heroe { artefactos = tail . artefactos $ heroe }
 
+-- 4) Modelado de Heracles + 5) tarea "matar al León de Nemea"
 heracles = Heroe "Guardian del Olimpo" 700 [pistola, relampagoDeZeus] [matarUnaBestia leonDeNemea]
 
 pistola = Artefacto "Pistola" 1000
@@ -103,12 +106,14 @@ debilidadLeonNemea = epitetoLargo
 epitetoLargo :: Heroe -> Bool
 epitetoLargo = (>20).length.epiteto
 
+-- 6) Un héroe realiza una tarea
 realizarTarea :: Tarea -> Heroe -> Heroe
 realizarTarea tarea = agregarTarea tarea .  tarea
 
 agregarTarea :: Tarea -> Heroe -> Heroe
 agregarTarea tarea heroe = heroe { tareas = tarea : tareas heroe }
 
+-- 7) Dos héroes presumen
 presumir :: Heroe -> Heroe -> (Heroe,Heroe)
 presumir heroe1 heroe2
   | tienenDistintoReconocimiento heroe1 heroe2 = ordenarHeroesPorReconocimiento heroe1 heroe2
@@ -137,13 +142,16 @@ ordenarHeroesPorRarezaTotal heroe1 heroe2
 realizarTareas :: [Tarea] -> Heroe -> Heroe
 realizarTareas tareas heroe = foldr realizarTarea heroe tareas
 
--- 8) Dos heroes con mismo reconocimiento y ningun artefacto van a presumir eternamente
--- Debido a que no hay forma de que uno supere al otro en reconocimiento o rareza.
--- Y Presumir se convierte en un ciclo infinito en el que nunca nada cambia y se comparan los mismos dos Heroes eternamente.
+-- 8) Dos heroes con mismo reconocimiento y ningun artefacto van a presumir eternamente,
+--      debido a que no hay forma de que uno supere al otro en reconocimiento o rareza.
+--      Y Presumir se convierte en un ciclo infinito en el que nunca nada cambia y se comparan
+--      los mismos dos Heroes eternamente.
 
+-- 9) Un héroe realiza una labor
 type Labor = [Tarea]
 
 realizarLabor :: Labor -> Heroe -> Heroe
-realizarLabor= realizarTareas
+realizarLabor = realizarTareas
 
--- 10) No, debido a que para realizar para realizar una labor, se necesitan realizar todas las tareas de la misma obligatoriamente
+-- 10) No, debido a que para realizar una labor, se necesitan realizar todas
+--      las tareas de la misma obligatoriamente
