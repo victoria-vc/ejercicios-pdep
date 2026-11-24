@@ -114,17 +114,27 @@ Definir la función `sirvePino`, que:
 ---
 
 ## Ejercicio "League of Haskell"
-[Enunciado](./Ejercicio-LeagueOfHaskell.pdf)
+[Enunciado](./assets/Ejercicio-LeagueOfHaskell.pdf)
 
 ---
 
 ## Parcial Funcional "Tierra de Barbaros"
-[Enunciado](./Parcial-Funcional-Tierra-de-Barbaros.pdf)
+[Enunciado](./assets/Parcial-Funcional-Tierra-de-Barbaros.pdf)
 
 ---
 
 
 ## Parcial Funcional (tomado 01/06/26) "Héroes de Leyenda"
-[Enunciado](./Parcial-Funcional-Héroes-de-Leyenda.pdf)
+[Enunciado](./assets/Parcial-Funcional-Héroes-de-Leyenda.pdf)
 
 ---
+
+# Ejercicios de Prolog
+
+## Parcial Lógico "Guerrero Ninja Argento"
+[Enunciado](..assets/Parcial-Logico-Guerrero.pdf)
+
+# Ejercicios de Wollok
+
+## Parcial Objetos "Intensamente"
+[Enunciado](./assets/Parcial-Objetos-Intensamente.pdf)
