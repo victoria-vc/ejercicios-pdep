@@ -131,6 +131,94 @@ Definir la función `sirvePino`, que:
 
 # Ejercicios de Prolog
 
+## Ejercicio 1: Progenitores y abuelos
+
+Dada una base de conocimientos con `progenitor(Progenitor, Hijo)`, definir el predicado `abuelo/2` que relacione a un abuelo o abuela con su nieto o nieta.
+
+---
+
+## Ejercicio 2: Hermanos
+
+Definir el predicado `hermano/2` que relacione a dos personas distintas que comparten al menos un progenitor.
+
+---
+
+## Ejercicio 3: Tíos
+
+Definir el predicado `tio/2` que relacione a una persona con su sobrino o sobrina (es decir, es hermano o hermana de alguno de sus progenitores).
+
+---
+
+## Ejercicio 4: Tiempo de viaje
+
+Sabiendo los tramos disponibles `tramo(Origen, Destino, DistanciaKm)` y que una combi tarda 1.5 horas en recorrer 100 km:
+
+Definir el predicado inversible `tiempoViaje/3` que relacione un origen, un destino y el tiempo del viaje en horas.
+
+---
+
+## Ejercicio 5: Costo de viaje
+
+El costo de un viaje es:
+- $5000 base
+- $200 por minuto
+
+Definir el predicado inversible `costoViaje/3` que relacione un origen, un destino y el costo total del viaje.
+
+---
+
+## Ejercicio 6: Viaje económico
+
+Definir el predicado inversible `viajeEconomico/2` que relacione un origen y un destino cuyo costo de viaje sea menor a $15000.
+
+---
+
+## Ejercicio 7: Materias sin aprobar
+
+Dada una base de conocimientos con `estudiante/1`, `materia/1` y `aprobo(Estudiante, Materia, Nota)`:
+
+Definir el predicado inversible `debeMateria/2` que relacione a un estudiante con las materias que todavía no aprobó.
+
+---
+
+## Ejercicio 8: Estudiante al día
+
+Definir el predicado inversible `estaAlDia/1` que se cumpla para un estudiante si aprobó todas las materias existentes.
+
+---
+
+## Ejercicio 9: Promoción
+
+Definir el predicado inversible `promocionoTodo/1` que se cumpla si un estudiante aprobó todas las materias y en todas obtuvo una nota mayor o igual a 8.
+
+---
+
+## Ejercicio 10: Peso de un pino
+
+En una plantación de pinos representada mediante `pino(Id, AlturaMetros)`:
+- El peso se calcula así:
+  - 3 kg por cada centímetro hasta 3 metros
+  - 2 kg por cada centímetro por encima de 3 metros
+
+Definir el predicado inversible `pesoPino/2` que relacione cada pino con su peso.
+
+---
+
+## Ejercicio 11: Pino útil
+
+Una fábrica de muebles acepta árboles que pesen entre:
+- 400 kg y 1000 kg
+
+Definir los predicados `esPesoUtil/1` y `sirvePino/1` (inversible) que indiquen si un peso es útil y si un pino sirve para la fábrica.
+
+---
+
+## Ejercicio 12: Peso total útil
+
+Definir el predicado `pesoTotalUtil/1` que relacione el peso total resultante de sumar los pesos de todos los pinos que sirven para la fábrica.
+
+---
+
 ## Parcial Lógico "Guerrero Ninja Argento"
 [Enunciado](..assets/Parcial-Logico-Guerrero.pdf)
 
